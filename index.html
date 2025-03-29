@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Files/icon.jpg">
+    <link rel="stylesheet" href="./Files/styles.css">
+    <title>ONLINE | CASH REGISTRAR</title>
+    <script defer src="./Files/script.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>CASH REGISTER WEB APP</h1>
+        </header>
+        <button id="howAppWorksBtn"><h2><ins>How this app works ⮟</ins></h2></button>
+        <dialog id="dialog">
+            <button id="closeDialogBtn">Close</button>
+            <p>
+                Suppose you are at a bookstore buying a novel for $15 and you've $20. 
+                The cashier enters your price into the cash register. <br>
+                The cash register calculates that you get $5 in change and triggers the cash drawer to open, so that you get your exchange. 
+                With this online application, the cash register automatically calculates the customer's payment and ensures change is given based on the available bills and coins in the cash drawer. <br>
+                <b>For example,</b> if $545 needs to be returned, and the drawer contains 6 bills of $100, 5 bills of $50, and 5 coins of $5, the cash register combines these denominations to pay back the exact amount, and the system updates the cash drawer in the user interface (UI) to reflect the remaining cash. <br>
+                If there isn’t enough money in the cash drawer, the transaction won’t process, and no change will be given. <br>
+                Similarly, if the customer's payment matches the exact price, no change is required, and the UI remains unchanged. <br>
+                This functionality enhances payment efficiency, ensures accuracy, and dynamically updates the system to maintain transparency.
+            </p>
+        </dialog>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Enter the cash</legend>
+                    <label for="cash"></label>
+                    <input type="number" name="cashInput" id="cash">
+                </fieldset>
+                <button type="submit" id="purchase-btn">Purchase</button>
+            </form>
+            <div id="phones">
+                <div class="phone">
+                    <h3 id="cashDrawerTitle">Exchange Output</h3>
+                    <div id="change-due">
+                        Click purchase to get your <br>exchange now.
+                    </div>
+                </div>
+                <div class="phone" id="exchange">
+                    <h3 id="cashDrawerTitle">Cash Drawer</h3>
+                    <div class="dot" aria-hidden="true"></div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li> 
+                        <li></li> 
+                        <li></li>
+                        <li></li> 
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p id="pricePara"><b>Price $<span id="price"></span></b></p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <h3>&copy; Coded and Designed By <br><a href="" target="_blank">SHIMWA Benjamin</a></h3>
+        </footer>
+    </main>
+</body>
+</html>
