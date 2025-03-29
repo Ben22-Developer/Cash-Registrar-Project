@@ -98,6 +98,7 @@ legend {
     position: relative;
     width: max-content;
     max-width: 80%;
+    min-width: 15rem;
     line-height: 1.5rem;
     border: .3rem solid;
     border-top: 2.5rem solid;
