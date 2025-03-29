@@ -91,6 +91,7 @@ legend {
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0 1rem;
 }
 
 .phone {
